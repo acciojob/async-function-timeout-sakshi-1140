@@ -1,11 +1,11 @@
 // Event listener for button click
-const button =document.getElementByID('btn')
+const button =document.getElementById('btn')
 button.addEventListener('click',submitfunction);
 
 async function submitfunction(){
-  const inputValue=document.getElementByID('text').value;
-  const delayValue=document.getElementByID('delay').value;
-  const output=document.getElementByID('output');
+  const inputValue=document.getElementById('text').value;
+  const delayValue=document.getElementById('delay').value;
+  const output=document.getElementById('output');
    //output.textContent=5;
   await delay(Number(delayValue))
   
